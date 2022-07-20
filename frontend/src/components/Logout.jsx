@@ -24,7 +24,7 @@ export default function Logout() {
         className="btn-deconnexion"
         onClick={handleLogout}
       >
-        Se déconnecter
+        Hello
       </button>
     </div>
   )

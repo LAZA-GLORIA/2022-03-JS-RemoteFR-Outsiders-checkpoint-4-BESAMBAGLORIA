@@ -1,14 +1,13 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { useNavigate } from "react-router-dom";
 import Modal from "../components/Modal";
-import Logout from "../components/Logout";
-import Navbar from "../components/Navbar";
+import UserNavbar from "../components/UserNavbar";
 import Banner from "../components/Banner";
 import { MainContext } from "../contexts/MainContext";
 import "../assets/common.css";
 import "../assets/AdminUser.css";
 
-export default function AdminUser() {
+export default function UserDashboard() {
     const { isFirstConnection, setIsFirstConnection } = useContext(MainContext);
     const [isModal, setIsModal] = useState(false);
     const navigate = useNavigate();
@@ -31,7 +30,7 @@ export default function AdminUser() {
   
   return (
     <>
-    <Navbar />
+    <UserNavbar />
     <Banner />
     <div>
         <h2>
@@ -44,12 +43,6 @@ export default function AdminUser() {
           modalMessage="Votre inscription a bien été prise en compte !"
         />
       )}
-      {localStorage.getItem("loggedIn") && (
-              <div className="btn-div">
-                <Logout />
-              </div>
-            )
-      }
         </div>
     </div>
     </>

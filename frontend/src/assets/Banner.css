@@ -1,15 +1,13 @@
 .banner-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
-.div-menu-banner ul{
-    display: flex;
-    justify-content: space-between;
-    width: 6rem;
+.logo-title {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.div-menu-banner li {
-    list-style: none;
+.div-icons-banner {
+    display: flex;
 }
