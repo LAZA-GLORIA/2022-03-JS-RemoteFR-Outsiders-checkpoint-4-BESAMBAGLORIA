@@ -1,0 +1,12 @@
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #545454;
+    font-family: var(--font);
+    height: 6rem;    
+}
+
+.navbar-container h1 {
+    font-size: 1rem;
+}

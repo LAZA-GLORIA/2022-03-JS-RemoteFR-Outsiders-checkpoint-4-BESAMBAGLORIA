@@ -1,0 +1,15 @@
+.banner-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.div-menu-banner ul{
+    display: flex;
+    justify-content: space-between;
+    width: 6rem;
+}
+
+.div-menu-banner li {
+    list-style: none;
+}

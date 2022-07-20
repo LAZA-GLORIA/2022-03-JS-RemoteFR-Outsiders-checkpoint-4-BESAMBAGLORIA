@@ -1,0 +1,21 @@
+:root {
+    --background-color: #e2f0d9;
+    --navbar-color: #65bd60;
+    --connexion-color: #c5e0b4;
+    --font: "Lazy Dog";
+    --font-size: 1em;
+    --line-height: 1.5;
+    width: 100%;
+    --page-background-color: rgb(245, 245, 240);
+    --grey-background: rgb(242, 242, 242);
+    --delete-color: rgb(167, 72, 72);
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: var(--font);
+    scroll-behavior: smooth;
+  }
