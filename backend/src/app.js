@@ -1,4 +1,5 @@
 const express = require("express");
+const morgan = require("morgan");
 const cors = require("cors");
 const router = require("./router");
 
@@ -13,6 +14,7 @@ app.use(cors(corsOptions));
 app.use(express.json());
 // parse requests of content-type - application/x-www-form-urlencoded
 app.use(express.urlencoded({ extended: true }));
+app.use(morgan("dev"));
 app.use(router);
 
 // simple route
