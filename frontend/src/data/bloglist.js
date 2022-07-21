@@ -15,7 +15,7 @@ export const blogList = [
     id: 2,
     title: "7 CSS tools you should be using",
     category: "Java",
-    subCategory: ["vacation", "holidays", "sight seeing"],
+    subCategory: ["backend", "spring", "MVC"],
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     authorName: "Auteur",
@@ -27,7 +27,7 @@ export const blogList = [
     id: 3,
     title: " How to learn web devlopment",
     category: "Autres",
-    subCategory: ["e-commerce store", "clothing", "shopping store"],
+    subCategory: ["liens utiles", "chaine youtube"],
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     authorName: "Auteur",
