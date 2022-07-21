@@ -1,8 +1,10 @@
 import React, { useState } from "react";
+import { toast  } from 'react-toastify';
 import { NavLink, useNavigate } from "react-router-dom";
 import "../assets/common.css";
 import "../assets/Login.css";
 import ButtonBack from "../components/ButtonBack";
+import Footer from "./Footer";
 import API from "../services/api";
 
 export default function Login() {
@@ -26,9 +28,10 @@ export default function Login() {
           localStorage.setItem("userId", res.data.id);
           if (res.data.role === "ADMIN") {
             localStorage.setItem("isAdmin", true);
-            navigate("/mon-compte/admin-dashboard");
+            navigate("/mon-compte/admin");
           } else {
-            navigate("/mon-compte/utilisateur");
+            navigate("/mon-compte");
+            toast.success('Hey, Content de te revoir');
           }
         })
         .catch((err) => {
@@ -41,12 +44,13 @@ export default function Login() {
         });
     };
   return (
-    <div>
+    <>
+        <div className="login-container">
+        <ButtonBack />
         <h2>
         Connexion
         </h2>
-        <ButtonBack />
-        <div className="div-connexion-facebook-google">
+        <div className="div-connexion-autres">
             <div className="btn-connexion-facebook">
                 <button type="submit">Continuer avec Facebook</button>
             </div>
@@ -89,10 +93,12 @@ export default function Login() {
            
             <p> Vous n'avez pas encore de compte ?
           <NavLink to="/inscription">
-            Première inscription !
+            Inscrivez-vous ici !
           </NavLink>
         </p>
         </div>
     </div>
+    <Footer />
+    </>
   )
 }

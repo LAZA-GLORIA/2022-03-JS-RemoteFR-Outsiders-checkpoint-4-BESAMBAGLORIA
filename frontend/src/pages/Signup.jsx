@@ -1,10 +1,12 @@
 import React, { useState, useContext } from 'react';
+import { toast  } from 'react-toastify';
 import { useNavigate } from "react-router-dom";
 //import axios from "axios";
 import API from "../services/api";
 import Moment from "moment";
 import { MainContext } from "../contexts/MainContext";
 import ButtonBack from '../components/ButtonBack';
+import Footer from "./Footer";
 import "../assets/common.css";
 import "../assets/Signup.css";
 
@@ -47,7 +49,8 @@ export default function Signup() {
               setIsFirstConnection(true);
               localStorage.setItem("userId", res.data.id);
               localStorage.setItem("loggedIn", true);
-              navigate("/mon-compte/utilisateur");
+              navigate("/mon-compte");
+              toast.success("Inscription validée !");
             })
             .catch((err) => {
               if (err) {
@@ -61,12 +64,12 @@ export default function Signup() {
       };
     
   return (
-    <div>
+    <>
+    <div className='signup-container'>
         <ButtonBack />
         <h2>Inscription</h2>
-        <div>
+        <div className='div-signup-input'>
             <form onSubmit={handleRegister}>
-            <div>
             <input
               type="text"
               placeholder="Prénom"
@@ -81,7 +84,6 @@ export default function Signup() {
               required
               onChange={(e) => setLastname(e.target.value)}
             />
-          </div>
           <input
             type="text"
             placeholder="Numéro de téléphone"
@@ -138,11 +140,13 @@ export default function Signup() {
               </span>
             )}
           </div>
-          <div>
+          <div className='div-btn-signupsubmit'>
             <button type="submit">S'INSCRIRE</button>
           </div>
             </form>
-        </div>
-        </div>
+      </div>
+    </div>
+    <Footer />
+    </>
   )
 }

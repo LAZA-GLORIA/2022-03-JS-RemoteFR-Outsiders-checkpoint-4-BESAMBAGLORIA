@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from "react-router-dom";
+//import { NavLink } from "react-router-dom";
 import {
     FaYoutube,
     FaInstagram,
@@ -15,28 +15,32 @@ export default function Footer() {
     <footer className="footer">
       <div className="reseauxsociaux">
         <a href="https://www.wildcodeschool.com/fr-FR">
-          <FaInstagram size="27" color="yellow" />
+          <FaInstagram size="27" color="black" />
         </a>
         <a href="https://www.wildcodeschool.com/fr-FR">
-          <FaFacebook size="27" color="yellow" />
+          <FaFacebook size="27" color="black" />
         </a>
         <a href="https://www.wildcodeschool.com/fr-FR">
-          <FaYoutube size="27" color="yellow" />
+          <FaYoutube size="27" color="black" />
         </a>
         <a href="https://www.wildcodeschool.com/fr-FR">
-          <FaLinkedin size="27" color="yellow" />
+          <FaLinkedin size="27" color="black" />
         </a>
         <a href="https://www.wildcodeschool.com/fr-FR">
-          <FaTwitter size="27" color="yellow" />
+          <FaTwitter size="27" color="black" />
         </a>
       </div>
-      <div className="copyright-un">
-        <p>&copy;Copyright 2022 - Tous Droits Réservés </p>
-        <p>
+      <div className="copyright">
+        <p>&copy;Mayaladev 2022 </p>
+      {
+        /**
+         *        <p>
           <NavLink to="/mentions-legales">
-            - Mentions Légales
+            Mentions Légales
           </NavLink>
         </p>
+         */
+      }
       </div>
 
       <div>

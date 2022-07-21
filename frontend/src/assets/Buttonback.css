@@ -1,0 +1,13 @@
+.btn-back {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    width: 6rem;
+    font-weight: 800;
+    background-color: var(--clr-white);
+}
+
+.btn-back {
+    cursor: pointer;
+}

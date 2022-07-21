@@ -1,4 +1,6 @@
 import React from "react";
+import { ToastContainer  } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
@@ -18,6 +20,7 @@ function App() {
         <Route path="/" element={<Logout />} />
         <Route path="*" element={<Page404 />} />
       </Routes>
+      <ToastContainer />
     </div>
   );
 }

@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { NavLink } from "react-router-dom";
 import { FaBars  } from "react-icons/fa";
 import mayaladev from '../assets/img/mayaladev.svg';
-import "../assets/UserNavbar.css";
+import "../assets/Navbar.css";
 import "../assets/common.css";
 
 export default function UserNavbar() {
@@ -36,30 +36,24 @@ export default function UserNavbar() {
           <nav className='links' ref={linksRef}>
             {localStorage.getItem("loggedIn") && (
                 <>
-              <NavLink
-              to="/"
-              className={(items) =>
-                items.isActive ? "items-activated" : "items"
-              }
-            >
-            Deconnexion
-        </NavLink>
         <NavLink
         to="/projets"
-        className={(items) =>
-          items.isActive ? "items-activated" : "items"
-        }
+        className="items"
       >
       Projets
   </NavLink>
   <NavLink
         to="/cheat"
-        className={(items) =>
-          items.isActive ? "items-activated" : "items"
-        }
+        className="items"
       >
       Cheat
   </NavLink>
+  <NavLink
+              to="/"
+              className="btn-deconnexion"
+            >
+            Deconnexion
+        </NavLink>
   </>
             )
       }

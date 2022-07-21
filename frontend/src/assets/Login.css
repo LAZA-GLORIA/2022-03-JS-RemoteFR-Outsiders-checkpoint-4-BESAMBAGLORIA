@@ -1,0 +1,71 @@
+.login-container {
+    padding: 3rem 3rem 0 3rem;
+    height: 70vh;
+    background-image: url("./img/mayaladev.svg");
+}
+
+.login-container h2 {
+    margin: 1rem 0;
+}
+
+.btn-connexion-facebook button {
+    width: -webkit-fill-available;
+    height: 3rem;
+    margin: 0.2rem 0;
+}
+.btn-connexion-facebook button:hover {
+    background-color: var(--clr-facebook);
+    cursor: pointer;
+}
+
+.btn-connexion-google button{
+    width: -webkit-fill-available;
+    height: 3rem;
+}
+
+.btn-connexion-google button:hover {
+    background-color: var(--clr-google);
+    cursor: pointer;
+}
+
+.div-connexion-email input {
+    width: -webkit-fill-available;
+    height: 3rem;
+    margin: 0.2rem 0;
+    padding: 0 0.5rem;
+}
+
+.div-connexion-email input:hover {
+    cursor: pointer;
+}
+
+.btn-seconnecter button {
+    border: solid black;
+    background-color: white;
+    height: 3rem;
+    width: 10rem;
+    margin: 0.7rem 0;
+    font-weight: 800;
+}
+
+div.btn-seconnecter {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-seconnecter button:hover {
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+    .btn-seconnecter button {
+       font-size: 1.2rem;
+        height: 3rem;
+        width: 14rem;   
+    }
+
+    .login-container h2 {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+  }

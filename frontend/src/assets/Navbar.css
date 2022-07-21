@@ -1,116 +1,65 @@
-.navbar-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: #545454;
-    font-family: var(--font);
-    height: 6rem;    
-}
-
-.navbar-container h1 {
-    font-size: 1rem;
-}
-
-.logo-mayaladev {
+ .div-nav {
+    background: var(--clr-yellow);
+    box-shadow: var(--dark-shadow);
+  }
+  .logo-mayaladev {
     width: 4rem;
 }
-
-@media screen and (min-width: 800px) {
-    h1 {
-      font-size: 4rem;
-    }
-    h2 {
-      font-size: 2.5rem;
-    }
-    h3 {
-      font-size: 1.75rem;
-    }
-    h4 {
-      font-size: 1rem;
-    }
-    body {
-      font-size: 1rem;
-    }
-    h1,
-    h2,
-    h3,
-    h4 {
-      line-height: 1;
-    }
-  }
-  /*  global classes */
-  
-  /* section */
-  .section {
-    width: 90vw;
-    margin: 0 auto;
-    max-width: var(--max-width);
-  }
-  
-  @media screen and (min-width: 992px) {
-    .section {
-      width: 95vw;
-    }
-  }
-  
-  /*
-  =============== 
-  Navbar
-  ===============
-  */
-  .div-nav {
-    background: var(--clr-white);
-    box-shadow: var(--light-shadow);
-  }
   .nav-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
   }
+
+  .nav-title {
+    color: var(--clr-brown);
+  }
   .nav-toggle {
+    display: flex;
     font-size: 3rem;
-    color: var(--clr-primary-5);
+    color: var(--clr-brown);
     background: transparent;
     border-color: transparent;
     transition: var(--transition);
-    cursor: pointer;
   }
   .nav-toggle:hover {
-    color: var(--clr-primary-1);
+    cursor: pointer;
     transform: rotate(90deg);
   }
-  .logo {
-    height: 40px;
-  }
+
   .links a {
-    color: var(--clr-grey-3);
-    font-size: 1rem;
+    color: var(--clr-brown);
+    font-size: 1.2rem;
+    font-weight: 800;
     text-transform: capitalize;
     letter-spacing: var(--spacing);
     display: block;
-    padding: 0.5rem 1rem;
+    padding: 0.3rem 1rem;
     transition: var(--transition);
   }
   .links a:hover {
-    background: var(--clr-primary-8);
-    color: var(--clr-primary-5);
+    color: var(--clr-grey);
     padding-left: 1.5rem;
+    cursor: pointer;
   }
-  .social-icons {
-    display: none;
-  }
+
   .links-container {
-    height: 0;
+    height: 3rem;
     overflow: hidden;
     transition: var(--transition);
   }
-  .show-container {
-    height: 10rem;
+
+  @media screen and (min-width: 768px) {
+    .links a {
+      padding: 0 1rem;
+      font-size: 1.5rem;
+    }
   }
-  @media screen and (min-width: 800px) {
+ 
+  @media screen and (min-width: 960px) {
     .nav-center {
-      max-width: 1170px;
+      max-width: var(--max-width);
       margin: 0 auto;
       display: flex;
       align-items: center;
@@ -120,32 +69,45 @@
     .nav-header {
       padding: 0;
     }
+    .logo-mayaladev {
+      width: 7rem;
+  }
     .nav-toggle {
       display: none;
     }
     .links-container {
-      height: auto !important;
+      display: flex;
+      align-items: center;
     }
     .links {
       display: flex;
     }
     .links a {
-      padding: 0;
-      margin: 0 0.5rem;
+      margin: 0 2rem;
+      font-size: 1.5rem;
     }
+
+    .links a.btn-inscription {
+      border: solid black;
+      background-color: white;
+    }
+
+    .links a.btn-connexion {
+      border: solid black;
+      background-color: white;
+    }
+
+    .links a.btn-deconnexion {
+      border: solid black;
+      background-color: white;
+    }
+
     .links a:hover {
-      padding: 0;
       background: transparent;
     }
-    .social-icons {
-      display: flex;
+
+    .links a.items:hover {
+      background: transparent;
     }
-    .social-icons a {
-      margin: 0 0.5rem;
-      color: var(--clr-primary-5);
-      transition: var(--transition);
-    }
-    .social-icons a:hover {
-      color: var(--clr-primary-7);
-    }
+    
   }

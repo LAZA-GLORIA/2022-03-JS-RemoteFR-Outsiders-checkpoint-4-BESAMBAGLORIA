@@ -28,36 +28,30 @@ export default function Navbar() {
     <div className='nav-center'>
     <div className='nav-header'>
           <img src={mayaladev} className='logo-mayaladev' alt='logo mayaladev' />
-          <h1> MAYA LA DEV</h1>
+          <h1 className='nav-title'> MAYA LA DEV</h1>
           <button className='nav-toggle' onClick={toggleLinks}>
-            <FaBars color="yellow" height={30}/>
+            <FaBars />
           </button>
         </div>
         <div className='links-container' ref={linksContainerRef}>
           <nav className='links' ref={linksRef}>
           <NavLink
+                  to="/blog"
+                  className="items"
+                >
+                Blog
+            </NavLink>
+          <NavLink
                   to="/connexion"
-                  className={(items) =>
-                    items.isActive ? "items-activated" : "items"
-                  }
+                  className="btn-connexion"
                 >
                 Connexion
             </NavLink>
           <NavLink
                   to="/inscription"
-                  className={(items) =>
-                    items.isActive ? "items-activated" : "items"
-                  }
+                  className="btn-inscription"
                 >
                 Inscription
-            </NavLink>
-            <NavLink
-                  to="/blog"
-                  className={(items) =>
-                    items.isActive ? "items-activated" : "items"
-                  }
-                >
-                Blog
             </NavLink>
           </nav>
         </div> 

@@ -1,18 +1,22 @@
 import React from 'react';
+import { toast  } from 'react-toastify';
 import API from "../services/api";
 import "../assets/common.css";
 import "../assets/Logout.css";
 
 export default function Logout() {
+
     const handleLogout = (e) => {
         e.preventDefault();
-        API.get(`/logout/users`, {
+        API.get(`/logout/users`, 
+        {
           withCredentials: true,
         })
           .then((res) => {
             if (res.status === 200) {
-              localStorage.clear();
-              window.location = "/";
+              toast.success("A bientot !");
+              localStorage.clear(); 
+              window.location = "/";  
             }
           })
           .catch((err) => console.error(err));
