@@ -12,7 +12,6 @@ export default function Home() {
     <div>
         <Navbar />
         <Banner />
-        <h1>Hello</h1>
         <HomeContainer />
         <Footer />
     </div>

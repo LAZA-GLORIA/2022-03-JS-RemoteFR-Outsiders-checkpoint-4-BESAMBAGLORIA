@@ -2,6 +2,10 @@
     background: var(--clr-yellow);
     box-shadow: var(--dark-shadow);
   }
+
+  .nav-center {
+    background: linear-gradient(to top, var(--clr-yellow), var(--clr-brown));
+  }
   .logo-mayaladev {
     width: 4rem;
 }

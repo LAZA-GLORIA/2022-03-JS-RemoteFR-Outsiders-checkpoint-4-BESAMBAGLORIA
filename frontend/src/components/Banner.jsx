@@ -7,6 +7,7 @@ import "../assets/common.css";
 
 export default function Banner() {
   return (
+  <>
     <div className='banner-container'>
         <div className='div-searchbar'>
         <Searchbar />
@@ -16,10 +17,9 @@ export default function Banner() {
         </div>
         <div className="div-language">
         <Language />
-        </div>
-        
-       
-        
+        </div>   
     </div>
+    <div className="trait"><hr /></div> 
+  </>
   )
 }
