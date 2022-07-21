@@ -1,0 +1,62 @@
+.signup-container {
+    padding: 3rem 3rem 0 3rem;
+    height: 70vh;
+    background-image: url("./img/mayaladev.svg");
+}
+
+.signup-container h2 {
+    margin: 1rem 0;
+}
+
+.div-signup-input input {
+    width: -webkit-fill-available;
+    height: 2rem;
+    margin: 0.2rem 0;
+    padding: 0 0.5rem;
+}
+
+.div-signup-input input:hover {
+    cursor: pointer;
+    background-color: var(--clr-yellow);
+}
+
+.div-signup-input select {
+    height: 2rem;
+    margin: 0.2rem 0;
+    padding: 0 0.5rem;
+    cursor: pointer;
+}
+
+.div-signup-input select:hover {
+    cursor: pointer;
+    background-color: var(--clr-yellow);
+}
+.div-btn-signupsubmit {
+    display: flex;
+    justify-content: center;
+}
+.div-btn-signupsubmit button {
+    border: solid black;
+    background-color: white;
+    height: 3rem;
+    width: 10rem;
+    margin: 0.7rem 0;
+    font-weight: 800;
+}
+
+.div-btn-signupsubmit button:hover {
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+    .div-btn-signupsubmit button {
+       font-size: 1.2rem;
+        height: 3rem;
+        width: 14rem;   
+    }
+
+    .signup-container h2 {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+  }
