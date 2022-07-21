@@ -22,3 +22,9 @@
     margin: 1rem 2rem;
     cursor: pointer;
 }
+
+.trait
+{
+border-top: 2px solid var(--clr-purple);
+width : -webkit-fill-available;
+}

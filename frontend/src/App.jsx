@@ -6,7 +6,8 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Logout from "./components/Logout";
 import Signup from "./pages/Signup";
-import Page404 from "./pages/Page404";
+import PageInconnue from "./pages/PageInconnue";
+import Blog from "./pages/Blog/Blog";
 import UserDashboard from "./pages/UserDashboard";
 
 function App() {
@@ -18,7 +19,8 @@ function App() {
         <Route path="/connexion" element={<Login />} />
         <Route path="/mon-compte" element={<UserDashboard />} />
         <Route path="/" element={<Logout />} />
-        <Route path="*" element={<Page404 />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="*" element={<PageInconnue />} />
       </Routes>
       <ToastContainer />
     </div>

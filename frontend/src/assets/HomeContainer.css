@@ -1,4 +1,18 @@
 .homecontainer-container {
-    border: solid blue;
-    border-radius: 1rem;
+    height: 61vh;
 }
+
+.accroche-home {
+    width: 80%;
+    margin: auto;
+}
+
+.accroche-home p {
+    margin: 1rem 0;
+}
+
+@media screen and (min-width: 768px) {
+    .accroche-home {
+      margin-top: 5rem;
+    }
+  }

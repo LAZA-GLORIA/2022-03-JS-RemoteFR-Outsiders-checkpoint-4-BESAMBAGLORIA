@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { toast  } from 'react-toastify';
 import { NavLink, useNavigate } from "react-router-dom";
-import "../assets/common.css";
-import "../assets/Login.css";
 import ButtonBack from "../components/ButtonBack";
 import Footer from "./Footer";
 import API from "../services/api";
+import "../assets/common.css";
+import "../assets/Login.css";
 
 export default function Login() {
     const [email, setEmail] = useState("");
