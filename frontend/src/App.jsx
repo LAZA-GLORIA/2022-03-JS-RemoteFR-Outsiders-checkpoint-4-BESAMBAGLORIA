@@ -20,10 +20,7 @@ function App() {
         <Route path="/inscription" element={<Signup />} />
         <Route path="/connexion" element={<Login />} />
         <Route path="/mon-compte" element={<UserDashboard />} />
-        <Route
-          path="/mon-compte/admin"
-          element={<AdminDashboard />}
-        />
+        <Route path="/mon-compte/admin" element={<AdminDashboard />} />
         <Route path="/" element={<Logout />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="*" element={<PageInconnue />} />
