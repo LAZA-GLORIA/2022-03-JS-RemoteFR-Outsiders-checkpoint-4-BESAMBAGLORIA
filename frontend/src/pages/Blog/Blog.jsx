@@ -1,47 +1,66 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router';
-import Chip from './Chip';
-import BlogBanner from './BlogBanner';
-import { blogList } from '../../data/bloglist';
+import BlogItem from './BlogItem';
+import { FcSearch } from "react-icons/fc";
 import ButtonBack from '../../components/ButtonBack';
 import Banner from '../../components/Banner';
+import API from "../../services/api";
 import "./assets/Blog.css";
 import "../../assets/common.css";
 
 export default function Blog() {
-  const { id } = useParams();
-  const [blog, setBlog] = useState(null);
+  const [articles, setArticles] = useState([]);
+  const [searchArticles, setSearchArticles] = useState("");
+
+  const getAllArticles = () => {
+    API.get(`/articles`)
+      .then((res) => {
+        setArticles(res.data);
+      })
+      .catch((err) => console.error(err));
+  };
 
   useEffect(() => {
-    let blog = blogList.find((blog) => blog.id === parseInt(id));
-    if (blog) {
-      setBlog(blog);
-    }
+    getAllArticles();
   }, []);
+
   return (
     <>
     <Banner />
     <ButtonBack />
-    <BlogBanner />
-    <div>
-      {blog && (
-        <div className='blog-wrap'>
-          <header>
-            <p className='blog-date'>Published {blog.createdAt}</p>
-            <h1>{blog.title}</h1>
-            <div className='blog-subCategory'>
-              {blog.subCategory.map((category, i) => (
-                <div key={i}>
-                  <Chip label={category} />
-                </div>
-              ))}
-            </div>
-          </header>
-          <img src={blog.cover} alt='cover' />
-          <p className='blog-desc'>{blog.description}</p>
-        </div>
-      )}
+    <div className="searchBar-wrap">
+      <input
+        type="text"
+        placeholder="Recherche par catégories"
+        value={searchArticles}
+        onChange={(e) => setSearchArticles(e.target.value)}
+      />
+      <FcSearch size="27" color="black" />
     </div>
-    </>
-  )
-}
+      {articles && 
+      articles
+      .filter(
+        (article) =>
+        article.title
+            .toLowerCase()
+            .includes(searchArticles.toLowerCase()) ||
+            article.category
+            .toLowerCase()
+            .includes(searchArticles.toLowerCase()) ||
+            article.subCategory
+            .toLowerCase()
+            .includes(searchArticles.toLowerCase())   
+      )
+      .map((article) => {
+        return (
+          <li key={article.id}>
+                <BlogItem articles={articles} setArticles={setArticles} article={article} />
+              </li>
+              );
+        }) 
+        .reverse()}
+    
+  </>
+  );
+};
+
+

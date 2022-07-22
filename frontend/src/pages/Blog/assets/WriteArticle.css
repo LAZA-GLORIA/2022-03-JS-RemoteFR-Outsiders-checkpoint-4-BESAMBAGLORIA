@@ -1,0 +1,48 @@
+.div-form-writing {
+width: 90%;
+margin: auto;
+} 
+
+ .div-form-writing h2 {
+    margin: 1rem 0;
+    text-align: center;
+ }
+
+ .form-writing {
+    display: flex;
+    flex-direction: column;
+ }
+
+ .form-writing input {
+    width: -webkit-fill-available;
+    height: 2rem;
+    margin: 0.6rem 0;
+    padding: 0 0.5rem;
+    border: 3px solid var(--clr-facebook);
+ }
+
+ .form-writing input:hover {
+    cursor: pointer;
+ }
+
+ .form-writing textarea {
+    height: -webkit-fill-available;
+    min-height: 20rem;
+    width: -webkit-fill-available;
+    border: 3px solid var(--clr-facebook);
+    cursor: pointer;
+ }
+
+ .btn-writing button {
+    border: solid var(--clr-black);
+    background-color: var(--clr-white);
+    height: 3rem;
+    width: 10rem;
+    margin: 0.7rem 0;
+    font-weight: 800;
+    font-size: 1rem;
+ }
+
+ .link-articles {
+    cursor: pointer;
+ }
