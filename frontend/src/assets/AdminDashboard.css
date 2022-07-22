@@ -1,24 +1,6 @@
-.admindashboard-container h2 {
+.container-page-admin {
+    height: 50vh;
+    width: 90%;
+    margin: auto;
     text-align: center;
-    margin-top: 1rem;
-}
-
-.usersearch {
-    text-align: center;
-    margin: 2rem 0;
-    display: flex;
-    justify-content: center;
-}
-
-.iconsearch {
-    position: relative;
-    right: 2rem;
-    top: 0.3rem;
-}
-.usersearch input {
-    text-align: center;
-    border-radius: 2rem;
-    width: max-content;
-    padding: 0.6rem 2rem;
-    cursor: pointer;
 }

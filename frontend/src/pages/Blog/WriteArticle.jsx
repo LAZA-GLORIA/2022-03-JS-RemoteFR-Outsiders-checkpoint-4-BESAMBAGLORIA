@@ -5,6 +5,8 @@ import API from "../../services/api";
 import { toast  } from 'react-toastify';
 import "../../assets/common.css";
 import "./assets/WriteArticle.css";
+import UserNavbar from "../../components/UserNavbar";
+import Banner from "../../components/Banner";
 
 export default function WriteArticle() {
     const [title, setTitle] = useState("");
@@ -36,6 +38,9 @@ export default function WriteArticle() {
   };
 
   return (
+    <>
+    <UserNavbar />
+    <Banner />
     <div className="writing-container">
       <div className="div-form-writing">
         <h2>
@@ -87,5 +92,6 @@ export default function WriteArticle() {
         </NavLink>
       </div>
     </div>
+    </>
   );
 };
