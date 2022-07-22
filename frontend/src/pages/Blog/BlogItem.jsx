@@ -1,37 +1,26 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Chip from './Chip';
 import "./assets/Blogitem.css";
 import "../../assets/common.css";
 
-export default function BlogItem({
-    blog: {
-      description,
-      title,
-      createdAt,
-      authorName,
-      authorAvatar,
-      cover,
-      category,
-      id,
-    }}
-    ) {
+export default function BlogItem({ article }) {
   return (
     <div className='blogItem-wrap'>
-      <img className='blogItem-cover' src={cover} alt='cover' />
-      <Chip label={category} />
-      <h3>{title}</h3>
-      <p className='blogItem-desc'>{description}</p>
+      <img className='blogItem-cover' src={article.cover} alt='cover' />
+     <p className='blogItem-category'> {article.category}</p>
+      <p className='blogItem-subcategory'> {article.subCategory}</p>
+      <h3>{article.title}</h3>
+      <p className='blogItem-desc'>{article.description}</p>
       <footer>
         <div className='blogItem-author'>
-          <img src={authorAvatar} alt='avatar' />
+          <img src={article.authorAvatar} alt='avatar' />
           <div>
-            <h6>{authorName}</h6>
-            <p>{createdAt}</p>
+            <h6>{article.authorName}</h6>
+            <p>{article.createdAt}</p>
           </div>
         </div>
-        <Link className='blogItem-link' to={`/blog/${id}`}>
-        <span> &#8592;</span> <span> lire l'article </span> ➝
+        <Link className='blogItem-link' to={`/blog/${article.id}`}>
+        <span> lire l'article </span> ➝
         </Link>
       </footer>
     </div>

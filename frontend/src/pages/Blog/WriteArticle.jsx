@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import Moment from "moment";
-import API from "../../services/api";
+import API from "../../services/api"; 
 import { toast  } from 'react-toastify';
 import "../../assets/common.css";
 import "./assets/WriteArticle.css";
@@ -81,9 +81,9 @@ export default function WriteArticle() {
             <button type="submit">VALIDER</button>
           </div>
         </form>
-        <NavLink to="/articles" className="link-other-pages">
+        <NavLink to="/blog" className="link-articles">
           {" "}
-          Voir l'article
+          Tous les articles ➝
         </NavLink>
       </div>
     </div>
