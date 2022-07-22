@@ -7,14 +7,16 @@ export default function BlogItem({ article }) {
   return (
     <div className='blogItem-wrap'>
       <img className='blogItem-cover' src={article.cover} alt='cover' />
+     <div className="category">
      <p className='blogItem-category'> {article.category}</p>
       <p className='blogItem-subcategory'> {article.subCategory}</p>
+     </div>
       <h3>{article.title}</h3>
       <p className='blogItem-desc'>{article.description}</p>
       <footer>
         <div className='blogItem-author'>
           <img src={article.authorAvatar} alt='avatar' />
-          <div>
+          <div className='div-author-createdad'>
             <h6>{article.authorName}</h6>
             <p>{article.createdAt}</p>
           </div>
