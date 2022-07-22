@@ -36,19 +36,25 @@ export default function UserNavbar() {
           <nav className='links' ref={linksRef}>
             {localStorage.getItem("loggedIn") && (
                 <>
+                 <NavLink
+        to="/mon-compte/admin/write"
+        className="items"
+      >
+      Ecrire
+  </NavLink>
         <NavLink
         to="/projets"
         className="items"
       >
       Projets
-  </NavLink>
-  <NavLink
-        to="/cheat"
+    </NavLink>
+    <NavLink
+        to="/mon-compte/admin/inscrits"
         className="items"
       >
-      Cheat
-  </NavLink>
-  <NavLink
+      Utilisateurs
+    </NavLink>
+    <NavLink
               to="/"
               className="btn-deconnexion"
             >

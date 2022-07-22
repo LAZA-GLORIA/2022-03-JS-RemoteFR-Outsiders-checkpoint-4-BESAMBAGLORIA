@@ -11,6 +11,7 @@ import Blog from "./pages/Blog/Blog";
 import WriteArticle from "./pages/Blog/WriteArticle";
 import UserDashboard from "./pages/UserDashboard";
 import AdminDashboard from "./pages/AdminDashboard";
+import Inscrits from "./pages/Inscrits";
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <Route path="/connexion" element={<Login />} />
         <Route path="/mon-compte" element={<UserDashboard />} />
         <Route path="/mon-compte/admin" element={<AdminDashboard />} />
+        <Route path="/mon-compte/admin/inscrits" element={<Inscrits />} />
         <Route path="/mon-compte/admin/write" element={<WriteArticle />} />
         <Route path="/" element={<Logout />} />
         <Route path="/blog" element={<Blog />} />

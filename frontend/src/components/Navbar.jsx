@@ -2,9 +2,6 @@ import React, { useState, useRef, useEffect } from 'react';
 import { NavLink } from "react-router-dom";
 import { FaBars  } from "react-icons/fa";
 import mayaladev from '../assets/img/mayaladev.svg';
-import "../assets/Navbar.css";
-import "../assets/common.css";
-
 
 export default function Navbar() {
     const [showLinks, setShowLinks] = useState(false);
@@ -58,4 +55,4 @@ export default function Navbar() {
     </div>
     </div>
   )
-}
+} 
