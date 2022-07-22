@@ -4,11 +4,12 @@
     margin: 0 1rem;
     width: 90%;
     margin: auto;
+    margin-bottom: 5rem;
   }
 
   .blogItem-cover {
     height: 15rem;
-    background-color: var(--clr-yellow);
+    background-color: var(--clr-grey);
     object-fit: cover;
     margin-bottom: 0.5rem;
   }
@@ -57,21 +58,21 @@
   .blogItem-category {
     background-color: var(--clr-blue);
     color: var(--clr-white);
-    padding: 0.3rem 0.5rem;
+    padding: 0.5rem 1rem;
     border-radius: 5px;
     width: fit-content;
     text-transform: capitalize;
-    margin-bottom: 1rem;
+    margin: 1rem 1rem;
   }
 
   .blogItem-subcategory {
     background-color: var(--clr-google);
     color: var(--clr-white);
-    padding: 0.3rem 0.5rem;
+    padding: 0.5rem 1rem;
     border-radius: 5px;
     width: fit-content;
     text-transform: capitalize;
-    margin-bottom: 1rem;
+    margin: 1rem 1rem;
   }
   
   .blogItem-author {
@@ -93,4 +94,12 @@
     font-size: 0.9rem;
     color: var(--clr-grey);
     font-weight: 600;
+  }
+
+  .div-author-createdad {
+    margin-left: 0.5rem;
+  }
+
+  .category {
+    display: flex;
   }

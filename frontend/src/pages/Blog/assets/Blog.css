@@ -2,7 +2,9 @@
     max-width: 700px;
     margin: 0 auto;
   }
-  
+  li {
+    list-style: none;
+  }
   .blog-wrap header {
     text-align: center;
   }

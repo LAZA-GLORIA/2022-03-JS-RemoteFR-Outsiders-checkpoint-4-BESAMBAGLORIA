@@ -57,7 +57,7 @@ export default function Blog() {
               </li>
               );
         }) 
-        .reverse()}
+        .reverse()} 
     
   </>
   );
