@@ -1,0 +1,29 @@
+.banner-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.logo-title {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.div-searchbar {
+    margin: 1rem 2rem;
+    cursor: pointer;
+}
+
+.div-darkmode {
+    cursor: pointer;
+}
+.div-language {
+    margin: 1rem 2rem;
+    cursor: pointer;
+}
+
+.trait
+{
+border-top: 2px solid var(--clr-purple);
+width : -webkit-fill-available;
+}

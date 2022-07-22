@@ -1,0 +1,117 @@
+ .div-nav {
+    background: var(--clr-yellow);
+    box-shadow: var(--dark-shadow);
+  }
+
+  .nav-center {
+    background: linear-gradient(to top, var(--clr-yellow), var(--clr-brown));
+  }
+  .logo-mayaladev {
+    width: 4rem;
+}
+  .nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+
+  .nav-title {
+    color: var(--clr-brown);
+  }
+  .nav-toggle {
+    display: flex;
+    font-size: 3rem;
+    color: var(--clr-brown);
+    background: transparent;
+    border-color: transparent;
+    transition: var(--transition);
+  }
+  .nav-toggle:hover {
+    cursor: pointer;
+    transform: rotate(90deg);
+  }
+
+  .links a {
+    color: var(--clr-brown);
+    font-size: 1.2rem;
+    font-weight: 800;
+    text-transform: capitalize;
+    letter-spacing: var(--spacing);
+    display: block;
+    padding: 0.3rem 1rem;
+    transition: var(--transition);
+  }
+  .links a:hover {
+    color: var(--clr-grey);
+    padding-left: 1.5rem;
+    cursor: pointer;
+  }
+
+  .links-container {
+    height: 3rem;
+    overflow: hidden;
+    transition: var(--transition);
+  }
+
+  @media screen and (min-width: 768px) {
+    .links a {
+      padding: 0 1rem;
+      font-size: 1.5rem;
+    }
+  }
+ 
+  @media screen and (min-width: 960px) {
+    .nav-center {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem;
+    }
+    .nav-header {
+      padding: 0;
+    }
+    .logo-mayaladev {
+      width: 7rem;
+  }
+    .nav-toggle {
+      display: none;
+    }
+    .links-container {
+      display: flex;
+      align-items: center;
+    }
+    .links {
+      display: flex;
+    }
+    .links a {
+      margin: 0 2rem;
+      font-size: 1.5rem;
+    }
+
+    .links a.btn-inscription {
+      border: solid black;
+      background-color: white;
+    }
+
+    .links a.btn-connexion {
+      border: solid black;
+      background-color: white;
+    }
+
+    .links a.btn-deconnexion {
+      border: solid black;
+      background-color: white;
+    }
+
+    .links a:hover {
+      background: transparent;
+    }
+
+    .links a.items:hover {
+      background: transparent;
+    }
+    
+  }

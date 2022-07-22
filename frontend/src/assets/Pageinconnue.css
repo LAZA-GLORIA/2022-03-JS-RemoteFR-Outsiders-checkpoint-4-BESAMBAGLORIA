@@ -1,0 +1,13 @@
+.nontrouve-container {
+    background-color: var(--clr-purple);
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    padding: 0 1rem;
+    flex-direction: column;
+    text-align: center;
+}
+
+.nontrouve-container h1 {
+    margin: 2rem 0;
+}
