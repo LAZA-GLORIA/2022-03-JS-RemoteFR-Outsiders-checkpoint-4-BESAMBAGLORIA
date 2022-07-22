@@ -9,6 +9,8 @@ import Signup from "./pages/Signup";
 import PageInconnue from "./pages/PageInconnue";
 import Blog from "./pages/Blog/Blog";
 import UserDashboard from "./pages/UserDashboard";
+import AdminDashboard from "./pages/AdminDashboard";
+
 
 function App() {
   return (
@@ -18,6 +20,10 @@ function App() {
         <Route path="/inscription" element={<Signup />} />
         <Route path="/connexion" element={<Login />} />
         <Route path="/mon-compte" element={<UserDashboard />} />
+        <Route
+          path="/mon-compte/admin"
+          element={<AdminDashboard />}
+        />
         <Route path="/" element={<Logout />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="*" element={<PageInconnue />} />
