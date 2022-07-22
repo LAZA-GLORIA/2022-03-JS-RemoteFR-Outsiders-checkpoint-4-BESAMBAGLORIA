@@ -1,5 +1,4 @@
 import React from 'react';
-import Searchbar from './Searchbar';
 import Darkmode from "../components/Darkmode";
 import Language from "../components/Language";
 import "../assets/Banner.css";
@@ -10,7 +9,6 @@ export default function Banner() {
   <>
     <div className='banner-container'>
         <div className='div-searchbar'>
-        <Searchbar />
         </div>
         <div className="div-darkmode">
         <Darkmode />

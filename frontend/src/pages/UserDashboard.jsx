@@ -30,11 +30,9 @@ export default function UserDashboard() {
     <Banner />
     <div className='userdashboard-container'>
         <h2>
-        AdminUser
+        Dashboard Utilisateur
         </h2>
-        <div>
-  HELLO
-        </div>
+        
     </div>
     <Footer />
     </>
